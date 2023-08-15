@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/dataitem_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp" />
+    <TextView
+        android:id="@+id/dataitem_tv_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="max"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_below="@id/dataitem_tv_date"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp" />
+
+    <ImageView
+        android:id="@+id/dataitem_iv_weathericon"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@id/dataitem_tv_max"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/dataitem_tv_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="min"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_below="@id/dataitem_iv_weathericon"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp" />
+
+    <View
+        android:id="@+id/dataitem_view"
+        android:layout_width="@dimen/_2sdp"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:layout_toEndOf="@id/dataitem_tv_date"
+        android:layout_marginStart="@dimen/_2sdp"/>
+
+
+</RelativeLayout>
